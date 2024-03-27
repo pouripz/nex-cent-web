@@ -547,7 +547,7 @@ ul {
   position: absolute;
   top: 6px;
   left: 110%;
-  background: url("/images/Right.svg") no-repeat;
+  background: url("../../images/Right.svg") no-repeat;
 }
 
 .demo-link-wrapper {
@@ -583,7 +583,7 @@ ul {
   position: absolute;
   top: 18px;
   right: 0;
-  background: url("/images/right-white.svg") no-repeat;
+  background: url("../../images/right-white.svg") no-repeat;
 }
 
 .footer {
@@ -616,7 +616,7 @@ ul {
   display: inline-block;
   width: 50px;
   height: 30px;
-  background: url("/images/logo.svg") no-repeat;
+  background: url("../../images/logo.svg") no-repeat;
   vertical-align: middle;
 }
 
