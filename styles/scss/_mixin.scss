@@ -1,0 +1,73 @@
+// font
+
+@mixin inter400Font {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+@mixin inter500Font {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+}
+@mixin inter600Font {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+}
+
+@mixin inter700Font {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+}
+
+// hamburger menu
+
+@mixin hamburgerMenu {
+  display: block;
+  width: 3.3rem;
+  height: 0.4rem;
+  background-color: $blackColor;
+  border-radius: 20px;
+  transition: 200ms;
+}
+
+// box shadow
+
+@mixin boxShadow {
+  box-shadow: 0 2px 4px 0 #abbed133;
+}
+
+// btn
+
+@mixin btn {
+  padding: 10px 20px;
+  background-color: $primaryColor;
+  color: $whiteColor;
+  border-radius: 10px;
+  @include inter500Font;
+  transition: all 180ms ease-in-out;
+  &:hover{
+    background-color: $blackColor;
+  }  
+}
+
+// responsive
+
+@mixin mediaQuery($size) {
+  @if ($size == sm) {
+    @media all and (min-width: 640px) {
+      @content;
+    }
+  } @else if ($size == md) {
+    @media all and (min-width: 768px) {
+      @content;
+    }
+  } @else if ($size == lg) {
+    @media all and (min-width: 1024px) {
+      @content;
+    }
+  } @else if ($size == xl) {
+    @media all and (min-width: 1280px) {
+      @content;
+    }
+  }
+}
